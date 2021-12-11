@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     version="2.0">
+    <channel>
+        <title>UXS</title>
+        <!-- 
+            manifest.json 默认的示例中有两个比较重要的字段没有配置，那就是 version 和 appcast。version 很明显就是用来表示当前插件的版本的。
+            而 appcast 它的值是一个 XML 的 URL 地址，该 XML 里面包含了该插件所有的版本以及该版本对应的下载地址。Sketch 会将 version 对应的版本和 appcast 对应的 XML 进行对比，
+            如果发现有新的版本了，会使用该版本对应的下载地址下载插件，执行在线更新插件。一个 appcast.xml 文件大概是这样的格式。
+        -->
+        <!--  "appcast": "http://10.93.225.240/sketchcloud/view/plugin/appcast.xml", -->
+        <!-- "https://github.com/programan666/tata/blob/master/appcast.xml" -->
+        <link>https://github.com/programan666/tata/blob/master/appcast.xml</link>
+        <description>Brilliant Sketch Plugin</description>
+        <language>en</language>
+        <item>
+            <title>Version 2.1.15</title>
+            <description>
+                测试更新；
+            </description>
+            <enclosure url="http://uxs.rnd.hihonor.com/proxyapi2/plugin/downloadPlugin?publishVersion=2.1.15" sparkle:version="2.1.15"/>
+        </item>
+        <item>
+            <title>Version 2.1.16</title>
+            <description>
+                测试更新2.1.16；
+            </description>
+            <enclosure url="http://uxs.rnd.hihonor.com/proxyapi2/plugin/downloadPlugin?publishVersion=2.1.16" sparkle:version="2.1.16"/>
+        </item>
+    </channel>
+</rss>
